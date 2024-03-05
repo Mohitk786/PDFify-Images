@@ -23,7 +23,7 @@ const upload = multer({storage: storage})
 // const upload = multer({dest:"uploads/"})
 
 // single image upload => upload.single
-// many images upload  => upload.array
+// many images upload  => upload.array            
 
 
 //upload the image before processing function
@@ -33,6 +33,6 @@ const upload = multer({storage: storage})
 
 
 
-router.post('/upload',upload.single('image'),  UploadImage);
+router.post('/upload',upload.single("image"),  UploadImage);
 
 module.exports = router
