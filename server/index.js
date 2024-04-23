@@ -3,9 +3,9 @@ const app = express();
 require("dotenv").config();
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const cookieParser = require("cookie-parser")
-const path = require("path")
-const fs = require("fs")
+const cookieParser = require("cookie-parser");
+const path = require("path");
+const fs = require("fs");
 
 app.use(cookieParser());
 app.use(express.urlencoded({extended:false})); //It helps to parse the  form data
