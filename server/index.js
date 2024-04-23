@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended:false})); //It helps to parse the  form dat
 app.use(bodyParser.json());   //It helps to parse json data
 app.use(
     cors({
-      origin: "http://localhost:3000",
+      origin: "https://pd-fify-images.vercel.app/",
       credentials: true,
     })
 );
