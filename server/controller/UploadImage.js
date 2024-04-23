@@ -11,7 +11,7 @@ exports.UploadImage = async (req, res) => {
 
         const doc = new PDFDocument();
         let pdfName = 'pdf-' + Date.now()+'.pdf';
-        const pdfPath = path.join(__dirname, '..', `/uploads/pdfs/${pdfName}`);
+        const pdfPath = path.join(__dirname, '..', `/${pdfName}`);
         
         
         const pdfFileStream = fs.createWriteStream(pdfPath);
