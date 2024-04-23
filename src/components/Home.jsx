@@ -17,7 +17,7 @@ const Home = () => {
         setLoading(true)
         try{
             //make api call for converting
-            const response = await axios.post("http://localhost:5000/upload", formData, {headers: {'Content-Type': 'multipart/form-data'}} )
+            const response = await axios.post("https://pdfify-images.onrender.com/upload", formData, {headers: {'Content-Type': 'multipart/form-data'}} )
             setPdf(response.data.fileName);
             setLoading(false)
         }
