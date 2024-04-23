@@ -7,7 +7,7 @@ const {UploadImage} = require("../controller/UploadImage")
 
 const storage = multer.diskStorage({
     destination : function(req, file, cb){
-        return cb(null, './uploads/images')  //null means no error    here file is that is getting upload
+        return cb(null, './uploads')  //null means no error    here file is that is getting upload
     },
     filename : function(req, file, cb){  //kis naame se image save karni hai 
         return cb(null, `${Date.now()}-${file.originalname}`)  //to maine date k sath original naam ko append kardiya
